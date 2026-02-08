@@ -17,13 +17,13 @@
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  @include onTablet {
+  @include on-tablet {
     --columns: 6;
 
     column-gap: 24px;
   }
 
-  @include onMonitor {
+  @include on-monitor {
     --columns: 12;
   }
 }

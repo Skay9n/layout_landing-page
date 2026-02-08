@@ -20,8 +20,6 @@
   }
 
   &__products {
-    display: grid;
-
     @include page-grid;
 
     column-gap: 40px;
@@ -36,6 +34,10 @@
 
     &_photo {
       width: 100%;
+      &:hover{
+      transform: scale(1.05);
+      z-index: 10;
+    }
     }
 
     &_title {
@@ -84,5 +86,7 @@
     @include on-monitor {
       grid-column: span 4;
     }
+
+
   }
 }
