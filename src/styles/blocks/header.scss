@@ -1,3 +1,6 @@
+@use './utils/mixxin' as *;
+@use './utils/variables' as *;
+
 .header {
   display: flex;
   flex-direction: column;

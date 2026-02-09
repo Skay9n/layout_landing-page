@@ -1,3 +1,6 @@
+@use './utils/mixxin' as *;
+@use './utils/variables' as *;
+
 .contacts {
   padding: 64px var(--padding-inl);
 
