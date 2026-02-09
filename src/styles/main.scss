@@ -1,9 +1,9 @@
-@use './utils/mixxin' as *;
-@use './utils/variables' as *;
-@use './blocks/page';
-@use './blocks/header';
-@use './blocks/menu';
-@use './blocks/recommended';
-@use './blocks/categories';
-@use './blocks/about';
-@use './blocks/contact';
+@import './utils/mixxin';
+@import './utils/variables';
+@import './blocks/page';
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/recommended';
+@import './blocks/categories';
+@import './blocks/about';
+@import './blocks/contact';
