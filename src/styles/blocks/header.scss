@@ -37,7 +37,8 @@
       text-transform: uppercase;
       color: transparent;
       transform: translateX(100%);
-      transition: all var(transition-duration) ease;
+      transition: all var(--transition-duration) ease;
+      pointer-events: none;
     }
 
     &-b {
@@ -49,10 +50,13 @@
     background-image: url('/src/images/Icon-Phone-call.svg');
     }
 
-    &-b:hover + &-n,
-    &-n:hover {
-    color: var(--dark-blue);
-    transform: translateX(0);
+    @include on-monitor{
+        &-n:has(+ &-b:hover),
+        &-n:hover {
+        color: var(--dark-blue);
+        transform: translateX(0);
+        pointer-events: auto;
+      }
     }
   }
 
