@@ -3,7 +3,7 @@
 
   @include page-grid;
 
-  column-gap: 24px;
+  gap: 24px;
   padding: 48px var(--padding-inl);
 
   @include on-tablet {
@@ -19,10 +19,6 @@
 
   &_grid {
     grid-column: 1 / -1;
-
-    @include on-tablet {
-      grid-column: span 3;
-    }
   }
 
   &__photo {
@@ -44,6 +40,10 @@
     letter-spacing: 0;
     margin: 0;
 
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
     @include on-monitor {
       grid-column: 1 / 6;
     }
@@ -57,8 +57,12 @@
     line-height: 140%;
     letter-spacing: 0.15px;
 
+    @include on-tablet {
+      grid-column: 4 / -1;
+    }
+
     @include on-monitor {
-      grid-column: 6 / 9;
+      grid-column: 7 / 12;
     }
   }
 }

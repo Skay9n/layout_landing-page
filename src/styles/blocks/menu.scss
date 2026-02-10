@@ -62,12 +62,15 @@
   }
 
   &__l {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent;
     color: var(--l-color);
+    transition: text-decoration-color var(--transition-duration);
+
   }
 
   &__l:hover {
-    text-decoration: underline;
+    text-decoration-color: var(--l-color);
     text-underline-offset: 8 px;
   }
 

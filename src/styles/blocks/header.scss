@@ -19,15 +19,41 @@
   &__icons {
     display: flex;
     gap: var(--icons-s);
+    align-items: center;
   }
 
-  &__call-b {
+  &__call{
+
+    &-n{
+      text-decoration: none;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      text-align: right;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: transparent;
+      transform: translateX(100%);
+      transition: all var(transition-duration) ease;
+    }
+
+    &-b {
     width: var(--icons-s);
     height: var(--icons-s);
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('/src/images/Icon-Phone-call.svg');
+    }
+
+    &-b:hover + &-n,
+    &-n:hover {
+    color: var(--dark-blue);
+    transform: translateX(0);
+    }
   }
 
   &__h1 {

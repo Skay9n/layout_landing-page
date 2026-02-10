@@ -9,4 +9,8 @@
 
 технолігії які були використанін:
 розмітка HTML;
-стилі CSS and SCSS;
+стилі CSS;
+використовував можливості SCSS.
+
+
+- [DEMO LINK](https://Skay9n.github.io/layout_landing-page/)

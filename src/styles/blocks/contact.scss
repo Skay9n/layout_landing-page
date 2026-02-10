@@ -11,7 +11,7 @@
 
   @include page-grid;
 
-  column-gap: 48px;
+  gap: 48px;
 
   @include on-tablet {
     column-gap: 24px;
