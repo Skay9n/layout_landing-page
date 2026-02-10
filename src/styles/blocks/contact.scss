@@ -1,5 +1,7 @@
 .contacts {
   padding: 64px var(--padding-inl);
+  max-width: 1020px;
+  margin: 0 auto;
 
   @include on-tablet {
     padding-block: 120px;

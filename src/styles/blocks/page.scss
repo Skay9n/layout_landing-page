@@ -4,6 +4,8 @@
 
 .page {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 
   &__menu {
     overflow: auto;
@@ -20,10 +22,18 @@
   }
 }
 
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: Manrope, sans-serif;
   color: var(--dark-blue);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 main {

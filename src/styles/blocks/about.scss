@@ -1,5 +1,10 @@
+.abt-bckg{
+  background-color: var(--about-backg);
+}
+
 .about {
-  margin-top: 0;
+  max-width: 1020px;
+  margin: 0 auto;
 
   @include page-grid;
 
@@ -15,7 +20,6 @@
     column-gap: 24px;
   }
 
-  background-color: var(--about-backg);
 
   &_grid {
     grid-column: 1 / -1;
@@ -58,7 +62,7 @@
     letter-spacing: 0.15px;
 
     @include on-tablet {
-      grid-column: 4 / -1;
+      grid-column: 4 / 6;
     }
 
     @include on-monitor {
